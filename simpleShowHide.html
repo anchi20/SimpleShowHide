@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+
+</style>
+
+<script src="jquery-1.8.0.min.js"></script>
+
+<script>
+var t=-1;
+
+
+		$(document).ready(function ()
+		{
+		$("#k1").click(function ()
+							{
+							t++;
+							if (t%2==0)
+							 {
+							 	$("#k1").hide(2000);setTimeout('k2()' );	
+							 }
+							if (t%2==1)
+							 {
+							 	$("#k1").show(2000);setTimeout('k2()' );	
+							 }
+							});
+	
+		});
+
+				function k2()
+    						{
+							  if (t%2==0)
+							 {
+								 $("#k2").hide(1000);setTimeout('k3()' );
+							 }
+							   if (t%2==1)
+							 {
+							 	 $("#k2").show(1000);setTimeout('k3()' );
+							 }
+							  	
+							}
+				function k3()
+    						{
+							  if (t%2==0)
+							 {
+								 $("#k3").hide(2000);	 setTimeout('k4()' );
+							 }
+							if (t%2==1)
+							 {
+								 $("#k3").show(2000);	 setTimeout('k4()' );
+							 }
+							 	
+							}
+		
+				function k4()
+    							{
+							  if (t%2==0)
+							 {
+							 	$("#k4").hide(1000); setTimeout('k5()' );		
+							 }
+							  if (t%2==1)
+							 {
+								 $("#k4").show(1000);	 setTimeout('k5()' );	
+							 }
+						 
+								}
+				function k5()
+    							{
+							  if (t%2==0)
+							 {
+							 	$("#k5").hide(2000);setTimeout('$("#k1").click()' );	
+							 }
+							 if (t%2==1)
+							 {
+							 	$("#k5").show(2000);setTimeout('$("#k1").click()' );	
+							 }
+								 
+								}
+
+	
+</script>
+</head>
+
+<body >
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<table align="center"   >
+<tr>
+<td align="center">
+<img src="animal_0008.jpg" width="250px" height="200px" bor id ="k1" style=" border-radius:50px; border-color:#FFF; border-style:dashed;"/>
+</td>
+<td align="center">
+<img src="animal_0009.jpg" width="250px" height="200px"  id ="k2" style=" border-radius:50px; border-bottom-style:solid ; " />
+</td>
+<td align="center">
+<img src="animal_0023.jpg" width="250px" height="200px"  id ="k3" style=" border-radius:50px; border-color:#FFF; border-style:dashed; " />
+</td>
+<td align="center">
+<img src="animal_0025.jpg" width="250px" height="200px"  id ="k4"  style=" border-radius:50px; border-bottom-style:solid ; "/>
+</td>
+<td align="center">
+<img src="animal_0031.jpg" width="250px" height="200px"  id ="k5" style=" border-radius:50px; border-color:#FFF; border-style:dashed;"/>
+</td>
+</tr>
+</table>
+
+
+<br>
+
+
+
+<span class="ff"></span>
+</body>
+</html>
